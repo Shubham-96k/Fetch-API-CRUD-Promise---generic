@@ -22,8 +22,6 @@ const makeApiCall = (apiUrl, methodname, bodymsg = null) => {
     .then(res => {
         return res.json();
     })
-    .catch(err => alert(err))
-    
 }
 
 const objtoarr = eve => {
@@ -104,7 +102,7 @@ const postobjtemplating = eve => {
 }
 
 const onCreatepost = eve => {
-    eve.preventDefault()
+    eve.preventDefault();
     let postobj = {
         title : titleControl.value,
         body : bodyControl.value,
@@ -112,7 +110,7 @@ const onCreatepost = eve => {
     }
     makeApiCall(postUrl, "POST", JSON.stringify(postobj))
         .then(res => {
-            postobj.id = res.id;
+            postobj.id = res.name;
             postobjtemplating(postobj);
             eve.target.reset()
         })
