@@ -1,0 +1,8 @@
+
+
+.background{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8rsjG_4joxI6gulENNYkUZugeA7eGVA54V9gJiaTen9UnJrkHmcCvoGANDgZEV9lvNDg&usqp=CAU) no-repeat center/cover;
+    color: #fff;
+    font-weight: bolder;
+}
