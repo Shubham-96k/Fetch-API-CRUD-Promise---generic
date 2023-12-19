@@ -77,6 +77,9 @@ const onDelete = eve => {
         makeApiCall(deleteurl, "DELETE")
         .then(res => {
             document.getElementById(deleteid).remove()
+            postform.reset();
+            updtbtn.classList.add("d-none")
+            addbtn.classList.remove("d-none")
         })
         .catch(err => cl(err))
    }
